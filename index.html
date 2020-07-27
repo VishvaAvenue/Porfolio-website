@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="indexAbout.js">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -43,6 +44,42 @@
           </div>
 
         </div>
+
+        <!-- Intro Design HTML!!!! -->
+
+        <div class="intro"><img src="../Vishva@web/captain.jfif" alt="">
+          <div class="info">
+            <p style="margin-right: 4rem; font-size: 130%;">
+              <strong>Hey i'm</strong>
+            </p>
+            <p style="font-size: 184%;">
+              <strong>Chris Evans</strong>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- WELCOME -->
+
+        <div class="welcome-wrapper">
+          <div class="welcome-link-wrapper">
+            <div class="welcome-social-wrapper">
+              <img src="../Vishva@web/../Vishva@web/welcome.jpg" alt="" ;">
+
+              <p>Welcome to my portfolio website.This place is for everyone</p>
+              <h1>who is curious like me</h1>
+              <h2>Feel free to browse through the catalogue of Chris's photo and video content
+                for
+                daily art
+              </h2>
+              <h3>inspiration.</h3>
+              <a href="https://www.linkdin.com/"><img id="linkdin" src="../Vishva@web/linkdin.jpg" alt=""></a>
+              <a href="https://www.twitter.com"><img id="twitter" src="../Vishva@web/tweet.jpg" alt=""></a>
+              <a href="https://www.github.com"><img id="github" src="../Vishva@web/github.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
 
 
 
@@ -186,14 +223,8 @@
     </nav>
 
 
-    <div class="info">
-      <p style="margin-right: 4rem; font-size: 130%;">
-        <strong>Hey i'm</strong>
-      </p>
-      <p style="font-size: 184%;">
-        <strong>Chris Evans</strong>
-      </p>
-    </div>
+
+
 
 
     <!-- TO DO = Change this to input -->
@@ -229,20 +260,7 @@
 <!-- Then we filtered it down to the exact div we wanted -->
 <!-- And then we filtered it down to just the class list -->
 
-<script>
-  const portfolioItems = document.querySelectorAll('.portfolio-inside-item-wrapper');
-
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.add('img-darken');
-    });
-
-    portfolioItem.addEventListener('mouseout', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.remove('img-darken');
-    });
-  });
+<script src="index.js">
 
 </script>
 
