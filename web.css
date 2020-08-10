@@ -12,7 +12,7 @@ body {
 header {
   /* background-image: url("../Vishva@web/captain2.jfif"); 
   background-repeat: no-repeat;
-
+  
   /* padding: 20%; */
   /* padding-top: 10%; */
   height: 100vh;
@@ -38,7 +38,8 @@ nav a {
 .header-items {
   display: flex;
   justify-content: space-between !important;
-  padding: 38px;
+  padding: 15px;
+  background-color: antiquewhite;
 }
 
 .sticky {
@@ -175,6 +176,13 @@ nav a {
   margin-top: -2rem;
   height: 100px;
   padding-top: 3rem;
+  display: block;
+}
+
+#linkdin:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #twitter {
@@ -182,21 +190,35 @@ nav a {
   margin-top: -2rem;
   height: 100px;
   padding-top: 3rem;
+  display: block;
+}
+
+#twitter:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #github {
-  margin-left: 1rem;
+  margin-left: 0.1rem;
   margin-top: -2rem;
   height: 100px;
   padding-top: 3rem;
   width: 3.5rem;
+  display: block;
 }
 
+#github:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 /*PORTFOLIO DESIGN--STYLES  */
 
 .portfolio-items-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem;
 }
 
 .portfolio-inside-item-wrapper {
@@ -227,6 +249,10 @@ nav a {
 .img-logo-wrapper img {
   width: 50%;
   margin-bottom: 20px;
+}
+
+.img-logo-wrapper:hover {
+  transform: scale(1.2);
 }
 
 .img-text-wrapper .subtitle {
